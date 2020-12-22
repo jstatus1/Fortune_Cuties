@@ -4,6 +4,7 @@
 const cookieType = { 
      "FortuneCookie":
         {
+            "Name": "Fortune Cutie",
             "FullImage": require('./Images/FortuneCookie/FullCookie.png'),
             "Two-Thirds":require('./Images/FortuneCookie/two_thirds.png'),
             "Half":require('./Images/FortuneCookie/half.png'),
@@ -60,6 +61,7 @@ const cookieType = {
         },
     "PokemonCookie":
         {
+            "Name":"Pokemon Cutie",
             "FullImage": require('./Images/PokemonCookie/Pokemon_Cookie_FullCookie.png'),
             // "Two-Thirds":require('./Images/PokemonCookie/two_thirds.png'),
             // "Half":require('./Images/PokemonCookie/half.png'),

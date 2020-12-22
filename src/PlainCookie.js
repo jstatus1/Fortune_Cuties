@@ -61,6 +61,7 @@ class PlainCookie extends react.Component
                         <button type="button" onClick={ this.refreshPage }> Another Cutie? </button> 
                     </div>:
                     <>
+                    <h1>{this.props.CookieType.Name}</h1>
                        <button className="cookieButton" onClick={this.eatingCookie}>
                             <img src={this.state.src} alt="Fortune Cookie Image Here" />
                         </button>

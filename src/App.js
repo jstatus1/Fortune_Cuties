@@ -9,10 +9,22 @@ class App extends react.Component
 
   render() {
       return(
-      <div className="App">
-            <CarouselDisplay CookieType={cookieType}/>
-            
-      </div>)
+      <react.Fragment>
+        <nav class="navbar navbar-dark bg-dark">
+          
+            <a class="navbar-brand" href="#">
+              <h6>Fortune Cuties</h6>
+            </a>
+          
+        </nav>
+      
+        <div className="App">
+          
+              <CarouselDisplay CookieType={cookieType}/>
+              
+        </div>
+      </react.Fragment>
+      )
   
   }
 }
