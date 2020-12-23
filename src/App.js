@@ -1,5 +1,5 @@
 import react from 'react'
-import Home from './pages/Home'
+import Routes from './routes'
 
 
 class App extends react.Component 
@@ -7,7 +7,9 @@ class App extends react.Component
 
   render() {
       return(
-       <Home></Home>
+      <div>
+       <Routes/>
+      </div>
       )
   
   }

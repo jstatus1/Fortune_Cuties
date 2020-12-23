@@ -1,8 +1,5 @@
 import react from 'react'
 
-//QuoteBox
-import QuoteBox from './QuoteBox'
-
 
 class PlainCookie extends react.Component
 {
@@ -40,18 +37,13 @@ class PlainCookie extends react.Component
     }
 
 
-
     render()
     {
         return(
             <div className = "cookieMan">
                 {
                     (this.state.src === "")?
-                    <div className = "Quote_Box">
-                        <h1>Fortune:</h1>
-                        <QuoteBox/>
-                        <button type="button" onClick={ this.refreshPage }> Another Cutie? </button> 
-                    </div>:
+                    window.location.href = "/FortuneCookieQuote":
                     <>
                     <h1>{this.props.CookieType.Name}</h1>
                        <button className="cookieButton" onClick={this.eatingCookie}>
