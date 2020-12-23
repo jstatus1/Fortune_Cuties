@@ -22,6 +22,7 @@ class PokeDexPage extends React.Component
         }
 
         Promise.all(promises).then(res => {
+           console.log(res)
            this.setState({pokemon: 
                 res.map((data) => ({
                     name: data.name,
