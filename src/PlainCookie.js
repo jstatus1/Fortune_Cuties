@@ -43,7 +43,7 @@ class PlainCookie extends react.Component
             <div className = "cookieMan">
                 {
                     (this.state.src === "")?
-                    window.location.href = "/FortuneCookieQuote":
+                    window.location.href = this.props.CookieType.Content:
                     <>
                     <h1>{this.props.CookieType.Name}</h1>
                        <button className="cookieButton" onClick={this.eatingCookie}>

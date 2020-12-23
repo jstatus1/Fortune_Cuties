@@ -8,12 +8,7 @@ class Home extends React.Component
     render()
     {
         return (
-            <React.Fragment>
-                <nav class="navbar navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Cutie Cookies</a>
-                    </div>
-                </nav>   
+            <React.Fragment>  
                 <div>
                     <nav class="navbar navbar-dark bg-darkmp">    
                         <a class="navbar-brand" href="#">

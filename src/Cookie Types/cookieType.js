@@ -8,8 +8,9 @@ const cookieType = {
             "FullImage": require('./Images/FortuneCookie/FullCookie.png'),
             "TwoThirds":require('./Images/FortuneCookie/two_thirds.png'),
             "Half":require('./Images/FortuneCookie/half.png'),
-            "OneThird":require('./Images/FortuneCookie/FullCookie.png'),
-            "Sound": require('./Sound/Bite.mp3')
+            "OneThird":require('./Images/FortuneCookie/one_third.png'),
+            "Sound": require('./Sound/Bite.mp3'),
+            "Content": "/FortuneCutiePage"
         },
      "AnimalCookie":
         {
@@ -18,7 +19,8 @@ const cookieType = {
             "TwoThirds":require('./Images/AnimalCookie/1.Animal_two_thirds.png'),
             "Half":require('./Images/AnimalCookie/2.Animal_half.png'),
             "OneThird":require('./Images/AnimalCookie/3.Animal_One_Third.png'),
-            "Sound": require('./Sound/Bite.mp3')
+            "Sound": require('./Sound/Bite.mp3'),
+            "Content": "/AnimalCutiePage"
         },
      "DinosaurCookie":
         {
@@ -45,7 +47,8 @@ const cookieType = {
             "TwoThirds":require('./Images/SourCookie/1.lemon_two_thrids.png'),
             "Half":require('./Images/SourCookie/2.lemon_half.png'),
             "OneThird":require('./Images/SourCookie/3.lemon_one_third.png'),
-            "Sound": require('./Sound/Bite.mp3')
+            "Sound": require('./Sound/Bite.mp3'),
+            "Content": "/LemonCutiePage"
         },
     "ChristmasCookie":
         {
