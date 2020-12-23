@@ -1,18 +1,12 @@
 import react from 'react'
 
-//Cookie Images
-import Two_ThirdsCookie from './Cookie Types/Images/FortuneCookie/two_thirds.png'
-import HalfCookie from './Cookie Types/Images/FortuneCookie/half.png'
-import One_ThirdCookie from './Cookie Types/Images/FortuneCookie/one_third.png'
-import biteMP3 from './Cookie Types/Sound/Bite.mp3'
-
 //QuoteBox
 import QuoteBox from './QuoteBox'
 
 
 class PlainCookie extends react.Component
 {
-    biteSound = new Audio(biteMP3)
+    biteSound = new Audio(this.props.CookieType.Sound.default)
     
     state = {
         counter: 0,

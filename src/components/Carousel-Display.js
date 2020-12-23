@@ -1,5 +1,5 @@
 import react from 'react'
-import PlainCookie from './PlainCookie'
+import PlainCookie from '../PlainCookie'
 
 
 class CarouselDisplay extends react.Component 
