@@ -1,5 +1,5 @@
 import React from 'react'
-import QuoteBox from '../QuoteBox'
+import QuoteBox from '../components/Content/QuoteBox'
 
 class QuotePage extends React.Component 
 {
