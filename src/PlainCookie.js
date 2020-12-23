@@ -1,8 +1,6 @@
 import react from 'react'
 
 //Cookie Images
-import {cookieType} from './Cookie Types/cookieType'
-import FullCookie from './Cookie Types/Images/FortuneCookie/FullCookie.png'
 import Two_ThirdsCookie from './Cookie Types/Images/FortuneCookie/two_thirds.png'
 import HalfCookie from './Cookie Types/Images/FortuneCookie/half.png'
 import One_ThirdCookie from './Cookie Types/Images/FortuneCookie/one_third.png'
@@ -29,13 +27,13 @@ class PlainCookie extends react.Component
         switch(this.state.counter)
             {
                 case 2:
-                    this.setState({src:Two_ThirdsCookie})
+                    this.setState({src:this.props.CookieType.TwoThirds.default})
                     break;
                 case 4: 
-                    this.setState({src:HalfCookie})
+                    this.setState({src:this.props.CookieType.Half.default})
                     break;
                 case 6: 
-                    this.setState({src:One_ThirdCookie})
+                    this.setState({src:this.props.CookieType.OneThird.default})
                     break;
                 case 8:
                     this.setState({src:""})

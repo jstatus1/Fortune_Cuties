@@ -1,39 +1,16 @@
-import react,{useState} from 'react'
+import react from 'react'
 import PlainCookie from './PlainCookie'
 
- 
-let indicators = null
 
 class CarouselDisplay extends react.Component 
 {
 
     componentWillMount()
     {
-        // for (var key of Object.keys(this.props.CookieType)) 
-        // {
-        //     //console.log(key + '->' + this.props.CookieType[key].FullImage.default ) 
-        //     if(counter == 0)
-        //     {
-        //         indicators = <li data-bs-target="#carouselExampleDark" data-bs-slide-to={`$counter`} class="active"></li>
-        //     }else{
-        //         indicators += <li data-bs-target="#carouselExampleDark" data-bs-slide-to={`$counter`}></li>
-        //     }
-        //     counter++
-        // }
-
-        indicators = Object.keys(this.props.CookieType).map((key,index) => {
-            if(index == 0)
-            {
-                <li data-bs-target="#carouselExampleDark" data-bs-slide-to={index} class="active"></li>
-            }else
-            {
-                <li data-bs-target="#carouselExampleDark" data-bs-slide-to={index}></li>
-            }
+       Object.keys(this.props.CookieType).map((key,index) => {
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to={`$counter`}></li>
         })
-
-        console.log(indicators)
-
-        
+  
     }
 
     render()
@@ -41,15 +18,27 @@ class CarouselDisplay extends react.Component
         return (
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
-                   {indicators} 
+                   {Object.keys(this.props.CookieType).map((key,index) => {
+                        
+                        return index==0? <li data-bs-target="#carouselExampleDark" data-bs-slide-to={index} class="active"></li>:<li data-bs-target="#carouselExampleDark" data-bs-slide-to={index}></li>
+                    })} 
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <PlainCookie CookieType ={this.props.CookieType.FortuneCookie}/>
-                    </div>
-                    <div class="carousel-item">
-                        <PlainCookie CookieType ={this.props.CookieType.PokemonCookie}/>
-                    </div>
+                    {Object.keys(this.props.CookieType).map((key,index) => {
+                        return index == 0? 
+                            (
+                                <div class="carousel-item active">
+                                    <PlainCookie CookieType ={this.props.CookieType[key]}/>
+                                </div>
+                            ):
+                            (
+                                <div class="carousel-item">
+                                    <PlainCookie CookieType ={this.props.CookieType[key]}/>
+                                </div>
+                            )
+
+                            
+                    })} 
                 </div>
 
                 <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
