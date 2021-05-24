@@ -5,11 +5,6 @@ import Navbar from './components/NavBar'
 
 class App extends react.Component 
 {
-  componentWillMount()
-  {
-    
-  }
-
   render() {
       return(
 
