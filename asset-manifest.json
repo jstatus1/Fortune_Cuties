@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Fortune_Cuties/static/css/main.41869002.chunk.css",
-    "main.js": "/Fortune_Cuties/static/js/main.df6411b8.chunk.js",
-    "main.js.map": "/Fortune_Cuties/static/js/main.df6411b8.chunk.js.map",
+    "main.js": "/Fortune_Cuties/static/js/main.707f5203.chunk.js",
+    "main.js.map": "/Fortune_Cuties/static/js/main.707f5203.chunk.js.map",
     "runtime-main.js": "/Fortune_Cuties/static/js/runtime-main.db3539ac.js",
     "runtime-main.js.map": "/Fortune_Cuties/static/js/runtime-main.db3539ac.js.map",
     "static/js/2.ca68f5e1.chunk.js": "/Fortune_Cuties/static/js/2.ca68f5e1.chunk.js",
@@ -43,6 +43,6 @@
     "static/js/runtime-main.db3539ac.js",
     "static/js/2.ca68f5e1.chunk.js",
     "static/css/main.41869002.chunk.css",
-    "static/js/main.df6411b8.chunk.js"
+    "static/js/main.707f5203.chunk.js"
   ]
 }
