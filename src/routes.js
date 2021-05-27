@@ -12,6 +12,7 @@ const RouterComponent = () => {
         <BrowserRouter>
           <Switch>
             <Route path="/" exact component={Home}/>
+            <Route path="/Fortune_Cuties" exact component={Home}/>
             <Route path="/FortuneCutiePage" exact component={FortuneCutiePage} />
             <Route path="/LemonCutiePage" exact component={LemonCutiePage}/>
             <Route path="/PokeDexPage" exact component={PokeDexPage}/>

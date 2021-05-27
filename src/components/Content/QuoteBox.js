@@ -23,14 +23,6 @@ class QuoteBox extends react.Component
         errorMessage: null
     }
 
-    generateRandomLotto = () => 
-    {
-        for(let i = 0; i < 10; i++)
-        {
-            this.setState({lottNum:this.state.lottoNum + getRandomInt(100) + " "})
-        }
-        
-    }
 
     componentDidMount()
     {
@@ -40,7 +32,6 @@ class QuoteBox extends react.Component
         this.setState({errorMessage: error})
         });
 
-        this.generateRandomLotto()
     }
 
     

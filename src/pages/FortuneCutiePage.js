@@ -10,7 +10,7 @@ class QuotePage extends React.Component
             <div className = "Quote_Box">
             <h1>Fortune:</h1>
                 <QuoteBox/>
-                <a class="btn btn-outline-secondary" href="/" role="button">Another Cutie?</a>
+                <a class="btn btn-outline-secondary" href="/Fortune_Cuties" role="button">Another Cutie?</a>
             </div>
         </div>
         
